@@ -1,0 +1,76 @@
+body {
+  background: white !important;
+}
+
+.account-card__container {
+  position: relative;
+  min-width: 350px;
+}
+
+.account-elipse {
+  background: linear-gradient(205.46deg, #ffcb00 -11.59%, #e3a609 96.79%);
+  border-radius: 77px;
+  min-height: 77px;
+  display: flex;
+  align-items: center;
+}
+
+.account-card-content {
+  position: relative;
+  left: 77px;
+  margin-right: 80px;
+  border-top-left-radius: none;
+  border-top-right-radius: 71px;
+  border-bottom-right-radius: 71px;
+  border-bottom-left-radius: 71px;
+  min-height: 71px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.account-circle-bg {
+  position: absolute;
+  left: -18px;
+  top: -15px;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border: 15px solid black;
+  border-bottom: 0;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  width: 110px;
+}
+
+.account-card-wrap,
+.account-card-content {
+  background: black;
+}
+
+.account-circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3px;
+  left: 3px;
+  bottom: 3px;
+  width: 71px;
+  border-radius: 50%;
+  background: radial-gradient(
+    239.92% 407.52% at 95.52% -50%,
+    #2a2a2a 47.2%,
+    #1a1a1a 100%
+  );
+}
+
+.account-card-name {
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}

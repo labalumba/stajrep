@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Card</title>
+  </head>
+
+  <body>
+    <div
+      class="account-card-wrap"
+      style="padding: 15px 5px 15px 5px; width: 100%"
+    >
+      <div class="account-card__container">
+        <div class="account-circle-bg"></div>
+        <div class="account-elipse">
+          <div class="account-card-content" onclick="accdropFunction()">
+            <div class="account-dropbtn ml-4">2 Selection</div>
+            <div
+              class="account-card-dropdown-arrow"
+              id="account-card-dropdown-arrow"
+            >
+              <svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.29384 6.84428L0 1L0.5 0L6.4074 4.08974C6.76129 4.33474 7.23226 4.3258 7.57661 4.06754L13 0L13.5 1L7.6814 6.8186C7.30106 7.19894 6.688 7.21029 6.29384 6.84428Z"
+                  fill="#FFCB00"
+                />
+              </svg>
+            </div>
+
+            <div
+              id="account-card-dropdown-content"
+              class="account-card-dropdown-content"
+            >
+              <form class="account-selection-form">
+                <div class="account-radiobtn">
+                  <input
+                    type="checkbox"
+                    id="all"
+                    name="account-selection"
+                    value="all"
+                    onclick="toggle(this);"
+                  />
+                  <label for="all">All</label>
+                </div>
+                <div class="account-radiobtn">
+                  <input
+                    type="checkbox"
+                    id="try"
+                    name="account-selection"
+                    value="try"
+                  />
+                  <label for="try">TRY</label>
+                </div>
+                <div class="account-radiobtn">
+                  <input
+                    type="checkbox"
+                    id="btc"
+                    name="account-selection"
+                    value="btc"
+                  />
+                  <label for="btc">BTC</label>
+                </div>
+                <div class="account-radiobtn">
+                  <input
+                    type="checkbox"
+                    id="eth"
+                    name="account-selection"
+                    value="eth"
+                  />
+                  <label for="eth">ETH</label>
+                </div>
+                <div class="account-radiobtn">
+                  <input
+                    type="checkbox"
+                    id="cox"
+                    name="account-selection"
+                    value="cox"
+                  />
+                  <label for="cox">COX</label>
+                </div>
+                <div class="account-radiobtn">
+                  <input
+                    type="checkbox"
+                    id="xrp"
+                    name="account-selection"
+                    value="xrp"
+                  />
+                  <label for="xrp">XRP</label>
+                </div>
+                <div class="account-radiobtn">
+                  <input
+                    type="checkbox"
+                    id="usdt"
+                    name="account-selection"
+                    value="usdt"
+                  />
+                  <label for="usdt">USDT</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="account-circle">
+          <span class="account-card-name">My Funds</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

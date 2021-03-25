@@ -1,0 +1,81 @@
+body {
+  background: black !important;
+}
+
+.simp-button {
+  background: linear-gradient(205.46deg, #ffcb00 -11.59%, #e3a609 96.79%);
+  width: 100%;
+  min-width: 244px;
+  height: 58px;
+  border: #ffcb00;
+  border-radius: 101px;
+  box-shadow: 0 0 15px 2px #ffcb00;
+}
+.btn-text {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+  /* margin-bottom: 2%; */
+  letter-spacing: 0.02em;
+  color: white;
+}
+
+.alt-button {
+  background: transparent;
+  width: 100%;
+  min-width: 226.59px;
+  height: 39.1px;
+  border: 3px solid rgba(235, 87, 87, 1);
+  border-radius: 101px;
+}
+
+.alt-button .btn-text {
+  color: #eb5757;
+  font-size: 18px;
+}
+
+.bs-button {
+  background: rgba(235, 87, 87, 0.23);
+  width: 100%;
+  min-width: 233px;
+  height: 29px;
+  border: none;
+}
+.bs-button .btn-text {
+  color: #eb5757;
+  font-size: 18px;
+}
+
+.a-button {
+  width: 100%;
+  min-width: 71.33px;
+  height: 29px;
+  background: rgb(255, 203, 0, 0.25);
+  margin-right: 2px;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+.a-button .btn-text {
+  color: #ffcb00;
+  font-size: 14px;
+}
+
+.p-button {
+  width: 100%;
+  min-width: 71.33px;
+  height: 29px;
+  margin-right: 2px;
+  background: rgb(255, 203, 0, 0.15);
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+.p-button .btn-text {
+  color: #ffff;
+  font-size: 14px;
+}
