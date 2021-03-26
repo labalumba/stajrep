@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Mukta;
+  src: url(../Fonts/Mukta-Bold.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Yellix;
+  src: url(../Fonts/Yellix-Bold.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Yellix;
+  src: url(../Fonts/Yellix-Medium.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Yellix;
+  src: url(../Fonts/Yellix-Regular.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Yellix;
+  src: url(../Fonts/Yellix-SemiBold.ttf);
+  font-display: swap;
+}
