@@ -1,0 +1,53 @@
+body {
+  background-color: black !important;
+}
+.toggle {
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.toggle input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+.toggle input + label {
+  margin: 0;
+  padding: 0.75rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: none;
+  background: rgb(255, 203, 0, 0.25);
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 600;
+  text-align: center;
+  outline: none !important;
+  font-family: "Yellix";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.toggle input:checked + label {
+  color: #ffcb00;
+
+  z-index: 1;
+}
+.toggle input:focus + label {
+  outline: dotted 1px #ccc;
+  outline-offset: 0.45rem;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: black;
+}

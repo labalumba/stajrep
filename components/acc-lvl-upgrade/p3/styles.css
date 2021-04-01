@@ -1,10 +1,10 @@
 body {
   background-color: black !important;
-  color: brown !important;
+  color: white !important;
 }
 
 .acc-lvl-slider-wrappo {
-  width: 800px;
+  width: 250px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -78,78 +78,143 @@ body {
   flex-direction: column;
 }
 
-.acc-lvl-upgrade-idver-wrappo {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.acc-lvl-upgrade-idver-details form {
+  width: 100%;
 }
 
-.acc-lvl-upgrade-idver-cam-text h3,
-.acc-lvl-upgrade-idver-idcard-text h3 {
+.acc-lvl-upgrade-idver-details h3 {
   font-family: "Yellix";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 147.5%;
+
   color: #ffffff;
 }
-
-.acc-lvl-upgrade-idver-cam-text p,
-.acc-lvl-upgrade-idver-idcard-text p {
-  font-family: "Yellix";
+.acc-lvl-upgrade-idver-details p {
+  font-family: Yellix;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 150%;
-  color: #ffffff;
+  line-height: 19px;
+  color: #adadad;
+  margin-bottom: 0;
+}
+#acc-lvl-upgrade-choosecountry {
+  background: radial-gradient(
+    239.92% 407.52% at 95.52% -50%,
+    #2a2a2a 47.2%,
+    #1a1a1a 100%
+  ) !important;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  min-width: 50px;
+  min-width: 100%;
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
 }
 
-.acc-lvl-upgrade-idver-footnote {
-  background: rgb(255, 203, 0, 0.15);
-  border-radius: 4px;
+.tabs button {
+  min-height: 50px;
+  background: rgb(255, 203, 0, 0.25);
+  border: none;
+  font-family: "Yellix";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  transition: 0.1s;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.tabs button:focus {
+  color: #ffcb00;
+}
+
+.tabs button:hover {
+  transform: translateY(-2px);
+}
+
+.acc-lvl-scohice-tphoto {
+  width: 100%;
+  height: 137px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 2px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
-.acc-lvl-upgrade-idver-footnote p {
-  padding: 20px;
+.acc-lvl-scohice-tphoto label {
   font-family: "Yellix";
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  /* or 24px */
-
-  color: #ffffff;
-}
-
-.acc-lvl-upgrade-idver-footnote h3 {
-  font-family: "Yellix";
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
-  line-height: 147.5%;
+  line-height: 150%;
+  color: #ffffff;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.acc-lvl-schoice-tphoto-s2 {
+  width: 100%;
+  height: 137px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.acc-lvl-schoice-tphoto-s2 label {
+  font-family: "Yellix";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
   color: #ffffff;
 }
 
-.simp-button {
-  background: linear-gradient(205.46deg, #ffcb00 -11.59%, #e3a609 96.79%);
-  width: 40%;
-  align-self: center;
-  justify-self: center;
-  height: 58px;
-  border: #ffcb00;
-  border-radius: 101px;
-  box-shadow: 0 0 5px 1px #ffcb00;
+.acc-lvl-upgrade-selecttype input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
 }
-.btn-text {
+.acc-lvl-upgrade-selecttype input + label {
+  height: 50px;
+  border: none;
+  background: rgb(255, 203, 0, 0.25);
+  font-family: "Yellix";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
   display: flex;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 20px;
   align-items: center;
-  letter-spacing: 0.02em;
-  color: white;
+  padding: 0 10px;
+}
+
+.acc-lvl-upgrade-selecttype input:checked + label {
+  color: #ffcb00;
+  z-index: 1;
+}
+
+.acc-lvl-upgrade-selecttype {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acc-lvl-upgrade-vline {
+  border: 1px solid rgba(255, 255, 255, 0.17);
 }

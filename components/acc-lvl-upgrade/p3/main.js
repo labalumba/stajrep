@@ -1,55 +1,19 @@
-function toggleLevel() {
-  const lvl1Overlay = document.getElementsByClassName("acc-lvl1-overlay");
-  const lvl2Overlay = document.getElementsByClassName("acc-lvl2-overlay");
-  const lvl3Overlay = document.getElementsByClassName("acc-lvl3-overlay");
-  const lvl1border = document.getElementsByClassName("level1");
-  const lvl2border = document.getElementsByClassName("level2");
-  const lvl3border = document.getElementsByClassName("level3");
-  const rbs = document.querySelectorAll('input[name="levels"]');
-  let selectedValue;
-  for (const rb of rbs) {
-    if (rb.checked) {
-      selectedValue = rb.value;
-      break;
-    }
+function submitCard(event,cardChoice) {
+  event = event || window.event;
+  event.preventDefault()
+  var i;
+  var x = document.getElementsByClassName("submitchoice");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
   }
-  console.log(lvl1border);
+  document.getElementById(cardChoice).style.display = "block";  
+}
 
-  if (selectedValue == "level1") {
-    for (var i = 0; i < lvl1Overlay.length; i++) {
-      lvl1Overlay[i].classList.add("acc-lvl-overlay-show");
-      lvl2Overlay[i].classList.remove("acc-lvl-overlay-show");
-      lvl3Overlay[i].classList.remove("acc-lvl-overlay-show");
-    }
-    for (var i = 0; i < lvl1border.length; i++) {
-      lvl1border[i].classList.add("acc-lvl-border-highlight");
-      lvl2border[i].classList.add("acc-lvl-border-highlight");
-      lvl3border[i].classList.remove("acc-lvl-border-highlight");
-      lvl3border[i].classList.remove("acc-lvl-border-highlight-lvl3");
-    }
-  } else if (selectedValue == "level2") {
-    for (var i = 0; i < lvl2Overlay.length; i++) {
-      lvl2Overlay[i].classList.add("acc-lvl-overlay-show");
-      lvl1Overlay[i].classList.remove("acc-lvl-overlay-show");
-      lvl3Overlay[i].classList.remove("acc-lvl-overlay-show");
-    }
-    for (var i = 0; i < lvl2border.length; i++) {
-      lvl2border[i].classList.add("acc-lvl-border-highlight");
-      lvl3border[i].classList.add("acc-lvl-border-highlight");
-      lvl1border[i].classList.remove("acc-lvl-border-highlight");
-      lvl2border[i].classList.add("acc-lvl-border-highlight-lvl3");
-    }
-  } else if (selectedValue == "level3") {
-    for (var i = 0; i < lvl3Overlay.length; i++) {
-      lvl3Overlay[i].classList.add("acc-lvl-overlay-show");
-      lvl1Overlay[i].classList.remove("acc-lvl-overlay-show");
-      lvl2Overlay[i].classList.remove("acc-lvl-overlay-show");
-    }
-    for (var i = 0; i < lvl3border.length; i++) {
-      lvl3border[i].classList.add("acc-lvl-border-highlight");
-      lvl3border[i].classList.add("acc-lvl-border-highlight-lvl3");
-      lvl1border[i].classList.remove("acc-lvl-border-highlight");
-      lvl2border[i].classList.remove("acc-lvl-border-highlight");
-    }
-  }
+function nextStep(){
+ 
+  var a = document.getElementsByClassName("acc-lvl-scohice-tphoto");
+  var b = document.getElementsByClassName("acc-lvl-schoice-tphoto-s2");
+  console.log(b)
+  a[0].style.display = "none";
+  b[0].style.display= "flex"
 }
